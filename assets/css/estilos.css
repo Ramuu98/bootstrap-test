@@ -1,87 +1,44 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    height: 100%;
 }
 
 body {
-    background-color: #bd7f21e5;
-    min-height: 100vh;
+    background: #b88538;
 }
 
 header {
-    grid-area: header;
     background: #dfca6ce3;
-    min-height: 100px;
-    display: flex;
-    align-items: center;
-}
-
-
-.fondo {
-    background-image: url(../images/cerveza.jpg);
-    min-height: 1000px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-header img {
-    float: left;
-    height: 100px;
-    width: auto;
-}
-
-ul {
-    display: flex;
-    align-items: center;
-}
-
-li {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    margin: 0 18px;
-}
-
-section {
-    grid-area: section;
 }
 
 footer {
-    grid-area: footer;
     background: #dfca6ce3;
-    color: black;
-    text-align: center;
-    padding: 10px;
-    height: auto;
 }
 
-.tabla {
-    float: left;
-    margin: 100px 0px;
-    background-color: #dfca6ce3;
+.footer-text {
+    font-size: 18px;
 }
 
-.img-prod {
-    padding: 0%;
-    width: 400px;
-    height: auto;
-    margin: 40px 100px 55px;
-    box-sizing: border-box;
+.nav-linkss>ul>li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #000000;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
 }
 
-.grid-container {
-    display: grid;
-    gap: 10px;
-    grid-template:
-        "header"auto "section"1fr "footer"auto;
+.nav-linkss>ul>li:hover::after {
+    width: 100%;
 }
 
-.cardd {
-    background: #dfca6ce3;
-    margin-top: 240px;
+table {
+    background-color: #dfca6ce3 ;
+    margin-left: 15%;
+}
+
+@media (max-width: 700px) {
+    table {
+        margin-left: 0%;
+    }
 }

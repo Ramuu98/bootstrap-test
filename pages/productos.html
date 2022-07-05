@@ -6,38 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/images/favicon-32x32.png">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <script src="../bootstrap/js/jquery.slim.min.js"></script>
-    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
     <link rel="stylesheet" href="../assets/css/estilos.css">
     <title>Productos</title>
 </head>
 
-<body class="grid-container">
+<body>
     <header>
-        <div class="container-fluid">
-            <div>
-                <img src="../assets/images/logollama.png" alt="Logo de Llama la Birra" width="200" height="200" />
-                <nav>
-                    <ul class="d-flex align-items-center">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../pages/productos.html">Productos</a></li>
-                        <li>Nosotros</li>
-                        <li>Contacto</li>
-                        <li>Preguntas Frecuentes</li>
+        <div>
+            <div class="d-flex flex-wrap align-content-start align-items-center">
+                <img src="../assets/images/logollama.png" alt="Logo de Llama la Birra" height="100px" />
+                <nav class="nav-linkss">
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link active text-dark" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active text-dark"
+                                href="../pages/productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="#!">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="#!">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="#!">Preguntas Frecuentes</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
     <section>
-        <div>
+        <div class="d-flex flex-wrap align-content-center">
             <div>
-                <img src="../assets/images/imgprod.png" class="img-prod" alt="Canillas de cerveza" />
+                <img src="../assets/images/imgprod.png" class="img-fluid" alt="Canillas de cerveza" />
             </div>
-            <article>
-                <table class="table tabla" border="4" cellpadding="8" cellspacing="8">
-                    <tr>
-                        <th>Codigo</th>
+            <article class="d-flex align-items-center">
+                <table class="table table-reflow" border="2">
+                    <tr class="table-active">
+                        <th>Código</th>
                         <th>Nombre</th>
                         <th>Tipo</th>
                         <th>Precio litro</th>
@@ -68,11 +68,13 @@
             </article>
         </div>
     </section>
-    <footer>
-        <h3>© Todos los derechos reservados 2022</h3>
-        <h3><a href="https://www.instagram.com/llamalabirra/" target="_blank"><img src="../assets/images/instagram.png"
-                    width="30" height="30"></h3>
+    <footer class="d-flex flex-wrap justify-content-center align-items-center">
+        <h3 class="footer-text">© Todos los derechos reservados 2022</h3>
+        <h4><a href="https://www.instagram.com/llamalabirra/" target="_blank"><img src="../assets/images/instagram.png"
+                    width="30" height="30"></h4>
     </footer>
+    <script src="../bootstrap/js/jquery.slim.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
